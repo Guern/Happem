@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- CHILD -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/childTable"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <TableRow android:layout_marginLeft="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/expandablelistview_childrow_background" >
+        
+        <RelativeLayout >
+    		<TableRow 
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            	
+    		    <ImageView
+                    android:id="@+id/image_tag"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_marginLeft="12dip"
+                    android:src="@drawable/icon_40983" />
+
+                <TextView
+                    android:id="@+id/TVTags"
+                    android:layout_width="wrap_content"
+              	    android:layout_height="wrap_content"
+              	    android:layout_marginLeft="12dp"
+              	    android:layout_marginTop="5dp"
+              	    android:textSize="16sp"
+              	    android:textColor="@android:color/white" />
+    		</TableRow>
+    		
+    		<TableRow 
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableRow1"
+                android:layout_marginTop="5dp"
+                android:layout_alignLeft="@+id/tableRow1">
+                
+    		     <ImageView
+                    android:id="@+id/ImageLoc"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="12dip"
+                    android:src="@drawable/icon_42511" />
+    		    <RelativeLayout >
+    		        <TextView
+                        android:id="@+id/TVLoc_regione"
+                        android:layout_width="wrap_content"
+              	   		android:layout_height="wrap_content"
+              	    	android:layout_marginLeft="12dp"
+              	    	android:layout_marginTop="5dp"
+              	    	android:textSize="16sp"
+              	    	android:textColor="@android:color/white" />
+    		         <TextView
+                        android:id="@+id/TVLoc_prov"
+                        android:layout_width="wrap_content"
+              	        android:layout_height="wrap_content"
+              	        android:layout_below="@+id/TVLoc_regione"
+              	        android:layout_alignLeft="@+id/TVLoc_regione"
+              	        android:layout_marginTop="5dp"
+              	        android:textSize="16sp"
+              	        android:textColor="@android:color/white" />
+    		    </RelativeLayout>
+    		    
+    		</TableRow>
+    		
+    		<ImageButton
+                    android:id="@+id/ImageButton12"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/icon_47264"
+                    android:layout_below="@+id/tableRow2"
+                    android:layout_marginLeft="100dp" />
+</RelativeLayout>
+</TableRow>
+</TableLayout>

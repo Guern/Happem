@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/childTable"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:showDividers="end" >
+
+    <TableRow android:layout_marginLeft="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/expandablelistview_childrow_background" >
+        
+        <RelativeLayout >
+            
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:divider="@drawable/line"
+                android:showDividers="end" >
+               
+                <ImageView
+                    android:id="@+id/image_tag"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dip" />
+                
+              	<RelativeLayout>
+              	    
+              	    
+              	        <TextView 
+              	            android:id="@+id/TVTags"
+              	            android:layout_width="wrap_content"
+              	            android:layout_height="wrap_content"
+              	            android:layout_marginLeft="12dp"
+              	            android:layout_marginTop="5dp"
+              	            android:textSize="16sp"
+              	            android:textColor="@android:color/white"/>
+              	   
+              	    
+              	    
+              	        <TextView 
+              	            android:id="@+id/TVLoc_prov"
+              	            android:layout_width="wrap_content"
+              	            android:layout_height="wrap_content"
+              	            android:layout_below="@+id/TVTags"
+              	            android:layout_alignLeft="@+id/TVTags"
+              	            android:layout_marginTop="5dp"
+              	            android:textSize="16sp"
+              	            android:textColor="@android:color/white"/>
+
+              	    	<Button
+              	    	    android:id="@+id/button1"
+              	    	    android:layout_width="wrap_content"
+              	    	    android:layout_height="wrap_content"
+              	    	    android:layout_alignLeft="@+id/TVLoc_prov"
+              	    	    android:layout_below="@+id/TVLoc_prov"
+              	    	    android:layout_marginTop="5dp"
+              	    	    android:drawableRight="@drawable/googlemaps"
+              	    	    android:text="Vedi su  "
+              	    	    android:textSize="16sp" />
+
+              	    	 <Button
+              	    	     android:id="@+id/DirectionButton"
+              	    	     android:layout_width="wrap_content"
+              	    	     android:layout_height="wrap_content"
+              	    	     android:layout_alignBaseline="@+id/button1"
+              	    	     android:layout_marginLeft="10dp"
+              	    	     android:layout_toRightOf="@+id/button1"
+              	    	     android:drawableRight="@drawable/directions_button"
+              	    	     android:text="Guidami  "
+              	    	     android:textSize="16sp" />
+              	    
+                </RelativeLayout>
+            </TableRow>
+            
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tableRow1"
+                android:layout_below="@+id/tableRow1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" >
+                
+   				<ImageView
+   				    android:id="@+id/ImageLoc"
+   				    android:layout_width="30dip"
+   				    android:layout_height="30dip"
+   				    android:layout_gravity="center_vertical"
+   				    android:layout_marginLeft="12dip" />
+
+              	<TextView
+                    android:id="@+id/TVLoc_regione"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white" />
+            </TableRow>
+            
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tableRow2"
+                android:layout_below="@+id/tableRow2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" >
+              	
+                <ImageView
+                    android:id="@+id/ImageStipendio"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dip" />
+
+                <TextView
+                    android:id="@+id/TWStipendio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </TableRow>
+            
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tableRow2"
+                android:layout_below="@+id/tableRow3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" >
+              	
+                <ImageView
+                    android:id="@+id/ImageMail"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="12dip" />
+
+                <TextView
+                    android:id="@+id/TWMail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </TableRow>
+            
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tableRow3"
+                android:layout_below="@+id/tableRow5"
+                android:layout_marginTop="10dp" >
+                
+                <ImageView
+                    android:id="@+id/ImageCandCell"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dip" />
+
+                <TextView
+                    android:id="@+id/TWCandCell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/candidati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/email_button"
+                    android:text="Candidati  "
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tableRow3"
+                android:layout_below="@+id/tableRow4"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dip"
+                    android:src="@drawable/icon_36527" />
+
+                <Button
+                    android:id="@+id/Button01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:drawableRight="@drawable/youtube_button"
+                    android:text="Vedi su  " 
+                    android:textSize="16sp"/>
+
+            </TableRow>
+
+           
+        
+        </RelativeLayout>
+
+</TableRow>  
+</TableLayout>

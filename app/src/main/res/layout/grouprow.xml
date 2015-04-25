@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PARENT -->
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:stretchColumns="1" android:paddingTop="0dip" android:layout_gravity="top" 
+    android:background="@drawable/expandablelistview_grouprow_background"
+    android:layout_marginTop="20dp"
+    ><!-- android:background="@drawable/back_ann3"  -->
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/image_tag"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="60dip"
+            android:layout_marginTop="4dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:paddingTop="0dip"
+            android:stretchColumns="1" >
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/TVData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp" />
+            </TableRow>
+        </TableLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/darkblue"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/star" />
+    </TableRow>
+	  
+</TableLayout>

@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/back"
+     >
+
+
+	<RelativeLayout 
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back">
+
+
+
+    <TextView
+        android:id="@+id/regioneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/paroleChiave"
+        android:layout_below="@+id/paroleChiave"
+        android:layout_marginTop="50dp"
+        android:text="Password:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:typeface="serif"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/usernameLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/paroleChiave"
+        android:layout_alignBottom="@+id/paroleChiave"
+        android:layout_toRightOf="@+id/paroleChiave"
+        android:layout_marginLeft="70dp"
+        android:background="@layout/oval_corner"
+        android:ems="7"
+        android:padding="6dp"
+        android:textColor="@color/black"
+        android:typeface="serif"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/regioneText"
+        android:layout_alignBottom="@+id/regioneText"
+        android:layout_toRightOf="@+id/regioneText"
+        android:layout_alignLeft="@+id/usernameLogin"
+        android:layout_alignRight="@+id/usernameLogin"
+        android:background="@layout/oval_corner"
+        android:inputType="textPassword"
+        android:padding="6dp"
+        android:textColor="@color/black"
+        android:typeface="serif"
+        android:textSize="25sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonModificaDati"
+        android:layout_alignBottom="@+id/buttonModificaDati"
+        android:layout_alignRight="@+id/usernameLogin"
+        android:layout_marginRight="30dp"
+        android:drawableLeft="@drawable/registration1"
+        android:text="Button"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/buttonModificaDati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/regioneText"
+        android:layout_below="@+id/switch1"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/entrance1"
+        android:onClick="savePreferencesData"
+        android:text="Button"
+        android:typeface="serif" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordLogin"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:text="Ricorda Credenziali"
+        android:textOff="NO"
+        android:textOn="SI"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:scaleType="center"
+        android:src="@drawable/cooltext" />
+
+    <TextView
+        android:id="@+id/paroleChiave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:text="Username:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:typeface="serif"
+        android:textSize="25sp" />
+
+</RelativeLayout>
+</ScrollView>

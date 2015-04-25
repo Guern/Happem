@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/personaldatapagelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/provalayout" />
+
+    <TextView
+        android:id="@+id/RicercaLavoroTitolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Benvenuto!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/RicercaLavoroTitolo"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:text="Riepilogo Dati Personali"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:typeface="serif"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/provincia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tag"
+        android:layout_below="@+id/tag"
+        android:layout_marginTop="35dp"
+        android:text="Nome"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/cognome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/provincia"
+        android:layout_below="@+id/provincia"
+        android:layout_marginTop="25dp"
+        android:text="Cognome"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/datadinascita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cognome"
+        android:layout_below="@+id/cognome"
+        android:layout_marginTop="25dp"
+        android:text="Data di nascita"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/indirizzo"
+        android:layout_below="@+id/indirizzo"
+        android:layout_marginTop="25dp"
+        android:text="Telefono"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="25dp"
+        android:text="Password"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/nomeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/provincia"
+        android:layout_alignBottom="@+id/provincia"
+        android:layout_toRightOf="@+id/provincia"
+        android:layout_marginLeft="150dp"
+        android:text="NomeUser"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/cognomeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/datadinascita"
+        android:layout_alignLeft="@+id/nomeUser"
+        android:text="CognomeUser"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/indirizzo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/datadinascita"
+        android:layout_below="@+id/datadinascita"
+        android:layout_marginTop="25dp"
+        android:text="Indirizzo"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/DatadinascitaUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/datadinascita"
+        android:layout_alignLeft="@+id/cognomeUser"
+        android:text="DatadiNascitaUser"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/indirizzoUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/indirizzo"
+        android:layout_alignLeft="@+id/DatadinascitaUser"
+        android:text="IndirizzoUser"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/telefonoUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/telefono"
+        android:layout_alignLeft="@+id/indirizzoUser"
+        android:text="telefonoUser"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/usernameUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/username"
+        android:layout_alignLeft="@+id/telefonoUser"
+        android:text="UsernameUser"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/passwordUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/password"
+        android:layout_alignBottom="@+id/password"
+        android:layout_alignLeft="@+id/usernameUser"
+        android:text="PasswordUser"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mail"
+        android:layout_below="@+id/mail"
+        android:layout_marginTop="25dp"
+        android:text="Username"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/telefono"
+        android:layout_below="@+id/telefono"
+        android:layout_marginTop="25dp"
+        android:text="Email"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/emailUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mail"
+        android:layout_alignLeft="@+id/telefonoUser"
+        android:text="emailUser"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/gear3" />
+
+</RelativeLayout>
+</ScrollView>

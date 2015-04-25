@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:id="@+id/mainLayout">
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/buttonLayout" android:layout_width="fill_parent">
+		<TextView android:id="@+id/addressName"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:layout_weight="1" android:inputType="text"
+			android:textSize="15sp"></TextView>
+		
+			
+	</LinearLayout>
+	
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mymapview"
+        android:layout_width="500dp"
+        android:layout_height="500dp" 
+        
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+  
+        map:cameraTargetLat="45.070139"
+        map:cameraTargetLng="7.6700892"
+        map:cameraZoom="5"
+        map:mapType="normal"
+        map:uiRotateGestures="false"
+        map:uiScrollGestures="true"
+        map:uiTiltGestures="false"
+        map:uiZoomControls="true"
+        map:uiZoomGestures="false"
+        >
+
+   </com.google.android.gms.maps.MapView>
+
+   
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+<RelativeLayout 
+    android:id="@+id/RelativeLayout12"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/provalayout" />
+
+
+    <TextView
+        android:id="@+id/RicercaLavoroTitolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Effettua una nuova ricerca!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/RicercaLavoroTitolo"
+        android:layout_marginTop="55dp"
+        android:text="Tag(s)"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="20sp"
+        android:typeface="serif"/>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tag"
+        android:layout_alignBottom="@+id/tag"
+        android:layout_toRightOf="@+id/tag"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:hint="Inserisci tag(s)"
+        android:textSize="20sp" 
+        android:typeface="serif"/>
+
+    <TextView
+        android:id="@+id/regioneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tag"
+        android:layout_below="@+id/tag"
+        android:layout_marginTop="45dp"
+        android:text="Regione"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        style="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/regioneText"
+        android:layout_alignLeft="@+id/multiAutoCompleteTextView1"
+        android:layout_alignRight="@+id/multiAutoCompleteTextView1"
+        android:layout_alignTop="@+id/regioneText"
+        android:layout_toRightOf="@+id/regioneText" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_alignLeft="@+id/multiAutoCompleteTextView1"
+        android:layout_alignRight="@+id/multiAutoCompleteTextView1"
+      	android:layout_alignBaseline="@+id/provincia"
+        android:layout_alignTop="@+id/provincia"
+        android:layout_toRightOf="@+id/provincia"
+        android:layout_marginBottom="20dp"
+         />
+
+    <ImageButton
+        android:id="@+id/IBlocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner2"
+        android:layout_below="@+id/spinner2"
+        android:adjustViewBounds="true"
+        android:maxHeight="80dp"
+        android:maxWidth="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/marker" />
+
+    <TextView
+        android:id="@+id/provincia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/multiAutoCompleteTextView1"
+        android:text="Provincia"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="20sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/tvLocalizzami"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner2"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/multiAutoCompleteTextView1"
+        android:text="Localizzami"
+        android:textSize="20sp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/buttonRicercaLavoro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IBlocal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:background="@drawable/shape_button"
+        android:padding="20dip"
+        android:text="JobAroundU!"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+</RelativeLayout>
+</ScrollView>

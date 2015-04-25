@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:context=".MailActivity" >
+
+        <TextView
+            android:id="@+id/sendto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A:"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/et_address_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/sendto"
+            android:layout_alignLeft="@+id/et_subject_id"
+            android:ems="10"
+            android:textSize="15sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/oggetto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sendto"
+            android:layout_marginTop="20dp"
+            android:text="Oggetto:"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/et_subject_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/oggetto"
+            android:layout_alignBaseline="@+id/oggetto"
+            android:ems="10"
+            android:hint="Subject"
+            android:textSize="15sp"
+            android:typeface="serif" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/bt_send_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_message_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_button"
+            android:text="SEND" />
+
+        <EditText
+            android:id="@+id/et_message_id"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/write_a_message"
+            android:layout_below="@+id/bt_attach_id"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+        <ImageButton
+            android:id="@+id/bt_attach_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/oggetto"
+            android:layout_below="@+id/write_a_message"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_button"
+            android:src="@drawable/iconcv1"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/write_a_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bt_attach_id"
+            android:layout_below="@+id/et_subject_id"
+            android:layout_marginTop="50dp"
+            android:text="Scrivi un messaggio:"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv_attach_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et_message_id"
+            android:layout_toRightOf="@+id/oggetto"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

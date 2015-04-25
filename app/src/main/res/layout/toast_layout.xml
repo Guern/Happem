@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@layout/shape"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/immagine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="50dp"
+        android:src="@drawable/icon_8561" />
+
+    <TextView
+        android:id="@+id/ToastTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/immagine"
+        android:textColor="@android:color/white"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    
+
+</RelativeLayout>

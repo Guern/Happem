@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/modify_personal_data_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android1:gravity="center"
+    android1:orientation="vertical"
+    android1:scrollbars="horizontal" >
+
+    <ScrollView
+        android1:id="@+id/scrollView1"
+        android1:layout_width="fill_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_below="@+id/modifica" >
+
+        <LinearLayout
+            android1:layout_width="match_parent"
+            android1:layout_height="match_parent"
+            android1:layout_gravity="center_horizontal"
+            android1:layout_marginLeft="22dp"
+            android1:layout_marginTop="22dp"
+            android1:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nomeS"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/textview_background"
+                android:text="Nome:"
+                android:textSize="20sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editNomeSUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nome"
+                android:layout_marginTop="15dp"
+                android:layout_alignLeft="@+id/nomeS"
+                android:inputType="textPersonName"
+                android:textSize="23sp"
+                android:typeface="serif" >
+
+                
+            </EditText>
+
+            <TextView
+                android:id="@+id/cognomeS"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignLeft="@+id/nomeS"
+                android:background="@drawable/textview_background"
+                android:text="Cognome"
+                android:textSize="20sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editCognomeSUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:layout_alignLeft="@+id/nomeS"
+                android:hint="Cognome"
+                android:inputType="textPersonName"
+                android:textSize="23sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/datadinascitaS"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomeS"
+                android:layout_marginTop="25dp"
+                android:text="Data di Nascita"
+                android:background="@drawable/textview_background"
+                android:textSize="20sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/dObSUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:layout_alignLeft="@+id/nomeS"
+                android:hint="aaaa-mm-dd"
+                android:inputType="date"
+                android:textSize="23sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/citta"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomeS"
+                android:layout_marginTop="25dp"
+                android:text="Città"
+                android:background="@drawable/textview_background"
+                android:textSize="20sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/cittaSUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomeS"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:hint="Milano"
+                android:textSize="23sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/indirizzoS"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomeS"
+                android:layout_marginTop="25dp"
+                android:text="Indirizzo"
+                android:background="@drawable/textview_background"
+                android:textSize="20sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/indirizzoSUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomeS"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:hint="Via Mario Rossi 1"
+                android:textSize="23sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/telefonoS"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomeS"
+                android:layout_marginTop="25dp"
+                android:text="Numero Cellulare"
+                android:background="@drawable/textview_background"
+                android:textSize="20sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/telefonoSUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomeS"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:hint="3333333333"
+                android:inputType="phone"
+                android:textSize="23sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/emailS"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomeS"
+                android:layout_marginTop="25dp"
+                android:text="Email" 
+                android:background="@drawable/textview_background"
+                android:textSize="20sp"
+                android:typeface="serif"/>
+
+            <EditText
+                android:id="@+id/mailSUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomeS"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:hint="nome.cognome@email.com"
+                android:inputType="textEmailAddress"
+                android:textSize="23sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomeS"
+                android:layout_marginTop="25dp"
+                android:text="Username"
+                android:background="@drawable/textview_background"
+                android:textSize="20sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/usermameSUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomeS"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:textSize="23sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/Password1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomeS"
+                android:layout_marginTop="25dp"
+                android:text="Password"
+                android:background="@drawable/textview_background"
+                android:textSize="20sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/password1SUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomeS"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:inputType="textPassword"
+                android:textSize="23sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/password2S"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomeS"
+                android:layout_marginTop="25dp"
+                android:text="Inserisci nuovamente la password"
+                android:background="@drawable/textview_background"
+                android:textSize="20sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/password2SUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomeS"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:inputType="textPassword"
+                android:textSize="23sp"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/buttonModifica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrami!" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/modifica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Registrati!"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:typeface="serif"
+        android:textSize="30sp"/>
+
+</RelativeLayout>
